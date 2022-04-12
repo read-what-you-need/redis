@@ -7,8 +7,6 @@ services:
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
       - ./redis_data:/data
-      - /var/lib/redis
-      - /var/log/redis
     ports:
       - "6379:6379"
     restart: always
